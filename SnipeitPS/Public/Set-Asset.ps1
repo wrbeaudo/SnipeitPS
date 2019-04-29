@@ -50,6 +50,26 @@ function Set-Asset()
 
         [string]$Model_id,
 
+        [string]$Asset_tag,
+            
+        [string]$Assigned_to_id,
+            
+        [string]$Company_id,
+            
+        [string]$Location_id,
+            
+        [string]$Notes,
+            
+        [string]$Order_number,
+            
+        [string]$Purchase_cost,
+            
+        [string]$Purchase_date,
+            
+        [string]$Serial,
+
+        [string]$Warranty_months,
+
         [parameter(mandatory = $true)]
         [string]$url,
 
@@ -63,6 +83,16 @@ function Set-Asset()
         "name"      = $Name
         "status_id" = $status_id
         "model_id"  = $model_id
+        "asset_tag"       = $Asset_tag
+        "assigned_to"     = $Assigned_to_id
+        "company_id"      = $company_id
+        "rtd_location_id" = $location_id
+        "notes"           = $Notes
+        "order_number"    = $Order_number
+        "purchase_cost"   = $Purchase_cost
+        "purchase_date"   = $Purchase_date
+        "serial"          = $Serial
+        "warranty_months" = $Warranty_months
     }
 
     if ($customfields)
